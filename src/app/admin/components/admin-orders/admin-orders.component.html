@@ -1,0 +1,21 @@
+<h1>All Orders</h1>
+<div class="row col-10" *ngIf="orders$ | async as orders">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>User Id</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{ order.shipping.name }}</td>
+                <td>{{ order.userId }}</td>
+                <td>{{ order.datePlaced }}</td>
+                <td><a routerLink="/#">View</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
