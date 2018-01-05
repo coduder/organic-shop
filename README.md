@@ -1,27 +1,16 @@
 # Oshop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+(This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.)
+A mock online grocery store built with Angular 5, Firebase, and Bootstrap 4. Anonymous users can look through, filter, and add items to a shopping cart. Authentication (currently via Google OAuth api) is necessary to "check-out," as well as see previous orders. All site, user, and product info is stored in a Firebase database which serves as the backend.
 
-## Development server
+## Important
+Before you can run this app on your machine, you must create your own Firebase project (https://firebase.google.com/ > get started > + add project) and replace settings in /src/environments with settings of your own Firebase project.
+
+## Running the application
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+#### This project stemmed from the Udemy *Complete Angular Course* by Mosh Hamedani
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+http://programmingwithmosh.com/courses/complete-angular-master-class/
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
